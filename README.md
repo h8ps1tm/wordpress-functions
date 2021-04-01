@@ -2,6 +2,8 @@
 
 Useful functions to have on your WordPress website:
 
+## Change Media Attributes on Upload
+
 ```
 function changeOnImageUpload($post_ID) {
 
