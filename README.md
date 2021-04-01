@@ -1,5 +1,7 @@
 # Useful Functions to use in any instalation of WordPress
 
+Useful functions to have on your WordPress website:
+
 ```
 function changeOnImageUpload($post_ID) {
 
