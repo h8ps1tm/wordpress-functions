@@ -1,13 +1,14 @@
 # Useful Functions to use in any instalation of WordPress
 
 function changeOnImageUpload($post_ID) {
+
     // Check if uploaded file is an image, else do nothing
     if (wp_attachment_is_image($post_ID))
     {
         $title = get_post($post_ID)->post_title;
         // Sanitize the title: remove hyphens, underscores & extra
         // spaces:
-        $title = preg_replace('%\s*[-_\s]+\s*%', ' ', $title);
+        $title = preg_replace( '%\s*[-_\s]+\s*%', ' ', $title);
 
         // Create an array with the image meta (Title, Caption,
         // Description) to be updated
