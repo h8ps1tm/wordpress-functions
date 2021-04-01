@@ -1,1 +1,1 @@
-# wordpress-functions
+# WordPress-Functions
