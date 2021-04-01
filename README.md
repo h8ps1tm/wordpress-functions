@@ -28,7 +28,11 @@ function changeOnImageUpload($post_ID) {
 }
 ```
 
+## Load Image on correct format
+
+```
 function loadImage( $post_id, $size ) {
-$image_id    = get_post_thumbnail_id( $post_id );
-return wp_get_attachment_image( $image_id, $size );
+    $image_id    = get_post_thumbnail_id( $post_id );
+    return wp_get_attachment_image( $image_id, $size );
 }
+```
