@@ -1,5 +1,6 @@
 # Useful Functions to use in any instalation of WordPress
 
+```
 function changeOnImageUpload($post_ID) {
 
     // Check if uploaded file is an image, else do nothing
@@ -25,8 +26,9 @@ function changeOnImageUpload($post_ID) {
         wp_update_post($image_meta);
     }
 }
+```
 
 function loadImage( $post_id, $size ) {
-    $image_id    = get_post_thumbnail_id( $post_id );
-    return wp_get_attachment_image( $image_id, $size );
+$image_id    = get_post_thumbnail_id( $post_id );
+return wp_get_attachment_image( $image_id, $size );
 }
