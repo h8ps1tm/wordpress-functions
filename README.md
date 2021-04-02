@@ -40,3 +40,14 @@ function loadImage( $post_id, $size ) {
     return wp_get_attachment_image( $image_id, $size );
 }
 ```
+
+## Support SVG on Media Upload
+
+```
+function activateSVG( $file_types ) {
+    $new_filetypes = array();
+    $new_filetypes['svg'] = 'image/svg+xml';
+    $file_types = array_merge($file_types, $new_filetypes );
+    return $file_types;
+}
+add_filter('upload_mimes', 'add_file_types_to_uploads');
